@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
 import {
   SEOMeta, Marquee, TestimonialsGrid,
   WhySection, Newsletter, CourseCard,
 } from '@/components/ui/index'
 import { COURSES } from '@/data/courses'
-import { TESTIMONIALS, EVENTS, WHY_US } from '@/data/index'
+import { TESTIMONIALS, EVENTS } from '@/data/index'
 import { useScrollReveal } from '@/hooks/useScrollReveal'
 import './HomePage.css'
 
