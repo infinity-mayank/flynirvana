@@ -300,7 +300,8 @@ export function Newsletter() {
           border-radius: 12px; padding: 14px 20px;
           font-size: 15px; font-weight: 500; color: #7dc99e;
         }
-        @media (max-width: 640px) { .nl-inner { flex-direction: column; } .nl-form { max-width: 100%; width: 100%; } }
+        @media (max-width: 640px) { .nl-inner { flex-direction: column; align-items: stretch; gap: 28px; } .nl-form { max-width: 100%; width: 100%; } }
+        @media (max-width: 480px) { .nl-form { flex-direction: column; min-width: 0; } .nl-form .btn { width: 100%; } }
       `}</style>
     </section>
   )

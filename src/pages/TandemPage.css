@@ -1,6 +1,6 @@
 .tandem-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 72px;
   align-items: start;
 }
@@ -25,4 +25,8 @@
 }
 @media (max-width: 900px) {
   .tandem-grid { grid-template-columns: 1fr; gap: 48px; }
+}
+@media (max-width: 640px) {
+  .tandem-buttons .btn { width: 100%; }
+  .gift-box { padding: 22px 18px; }
 }

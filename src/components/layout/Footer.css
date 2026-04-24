@@ -45,6 +45,8 @@
   font-size: 13.5px;
   text-decoration: none;
   transition: color 0.2s;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .footer-contact a:hover { color: var(--gold); }
 .footer-social {
@@ -118,4 +120,7 @@
 @media (max-width: 640px) {
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .footer-bottom { flex-direction: column; text-align: center; }
+  .footer { padding-top: 52px; }
+  .footer-bottom-links { justify-content: center; flex-wrap: wrap; gap: 12px 20px; }
+  .cert-badge { width: fit-content; max-width: 100%; }
 }

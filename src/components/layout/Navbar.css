@@ -51,8 +51,10 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   text-decoration: none;
+  min-width: 0;
+  white-space: nowrap;
 }
 .nav-logo span { color: var(--gold); }
 
@@ -134,6 +136,7 @@
   padding: 8px;
   background: none;
   border: none;
+  flex-shrink: 0;
 }
 .hamburger span {
   width: 23px;
@@ -222,5 +225,12 @@
 }
 @media (max-width: 640px) {
   .topbar { display: none; }
-  .navbar { top: 0; }
+  .navbar { top: 0; padding: 0 18px; }
+  .nav-logo { font-size: 20px; }
+  .drawer { width: 100vw; }
+  .drawer-content { padding: 0 20px 24px; }
+}
+@media (max-width: 360px) {
+  .navbar { padding: 0 14px; }
+  .nav-logo { font-size: 18px; gap: 6px; }
 }

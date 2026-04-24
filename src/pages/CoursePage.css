@@ -1,6 +1,6 @@
 .course-detail-grid {
   display: grid;
-  grid-template-columns: 1fr 360px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
   gap: 60px;
   align-items: start;
 }
@@ -58,11 +58,17 @@
   align-items: center;
   gap: 6px;
   color: var(--gold);
+  min-width: 0;
 }
 
 @media (max-width: 1024px) {
   .course-detail-grid { grid-template-columns: 1fr; }
   .course-sidebar { position: static; }
+}
+@media (max-width: 640px) {
+  .sidebar-card { padding: 24px 20px; }
+  .includes-grid { flex-direction: column; align-items: stretch; }
+  .include-chip { width: 100%; }
 }
 @media (max-width: 600px) {
   .related-grid { grid-template-columns: 1fr !important; }
